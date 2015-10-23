@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/webdroid/webdroid.js"></script>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<script type="text/javascript" src="js/database.js"></script>
+	<script type="text/javascript" src="js/dashboard.js"></script>
+	<!-- Your custom page css and javascript go here //-->
+	<script type="text/javascript" src="js/company.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/login_signup.css"/> -->
+	
+</head>
+<body>
+<div class="screen-container">
+	<div class="header">
+		<div class="appbar">
+			<ul class="appbar-nav">
+				<li class="appbar-title">
+					<a href="javascript:hisotry.back()" class="appbar-back"><span class="fa fa-arrow-left"></span></a>
+					<span id="user_name">Dharmang Soni</span>
+				</li>
+				<li>
+					<a href="#"><span class="fa fa-sign-out"></span></a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<div class="main pdl16 pdr16">
+		<p class="divider-title">Company</p>
+		<div class="row">
+			<div class="col-md-12 pdl16 pdr16" style="padding-left:23px"> 
+				<form>
+					<div class="form-group">
+					    <label for="inputCompanyName">Company Name</label>
+					    <input type="text" class="form-control" id="inputCompanyName" placeholder="Company name">
+				  </div>
+				  <div class="form-group">
+					    <label for="inputDesignation">Designation</label>
+					    <textarea rows="3" id="inputDesignation" class="form-control" placeholder="Designation"></textarea>
+				  </div>
+				 
+				  <div class="form-group">
+					    <label for="inputJoinDate">Join Date</label>
+					    <input type="text" class="form-control" id="inputJoinDate" placeholder="MM/DD/YYYY">
+				  </div>
+				  <div class="form-group">
+					    <label for="inputEndDate">End date</label>
+					    <input type="text" class="form-control" id="inputEndDate" placeholder="MM/DD/YYYY">
+					    <label><input type="checkbox" id="checkboxOnGoing"/> On Going</label>
+				  </div>
+				  <div class="form-group">
+					    <label for="inputSummary">Summary</label>
+					    <textarea rows="3" id="inputSummary" class="form-control" placeholder="Detailed Summary"></textarea>
+				  </div>
+				   <button type="button" id="btnSave" class="btn btn-lg btn-success btn-block">Save Details</button>
+				   <br/>
+				</form>
+
+				<p class="divider-title">All Companies</p>
+				<br/>
+				<table class="table table-hover">
+					<tbody id="table_body">
+		  				<tr>
+		  					<td>
+		  						<div class="row course-row">
+		  							<div class="col-md-12">
+			  							<h2 class="content-title inline-content">Company name</h2>
+			  							<h5 class="content-subtitle">Designation</h5>
+			  							<p>Summary</p>
+			  							<a href="#" class="company_remove text-danger pdl16 pull-right"><span class="fa fa-remove fa-2x text-danger"></span> Remove</a>
+		  							</div>
+		  						</div>
+		  					</td>
+		  				</tr>
+	  				</tbody>
+				</table>
+				<br/><br/><br/>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Resume Builder</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="powered_by">Powered by</string>
+    <string name="web_droid">WebDroid</string>
+    <string name="label_alert">Alert</string>
+    <string name="label_error">Error</string>
+    <string name="label_warning">Warning</string>
+    <string name="label_ok">OK</string>
+    <string name="toast_no_activity_found_to_handle_file">No Application found to handle request</string>
+</resources>

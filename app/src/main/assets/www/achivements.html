@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/webdroid/webdroid.js"></script>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<script type="text/javascript" src="js/database.js"></script>
+	<script type="text/javascript" src="js/dashboard.js"></script>
+	<!-- Your custom page css and javascript go here //-->
+	<script type="text/javascript" src="js/achivements.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="css/login_signup.css"/> -->
+	
+</head>
+<body>
+<div class="screen-container">
+	<div class="header">
+		<div class="appbar">
+			<ul class="appbar-nav">
+				<li class="appbar-title">
+					<a href="javascript:hisotry.back()" class="appbar-back"><span class="fa fa-arrow-left"></span></a>
+					<span id="user_name">Dharmang Soni</span>
+				</li>
+				<li>
+					<a href="#"><span class="fa fa-sign-out"></span></a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<div class="main pdl16 pdr16">
+		<p class="divider-title">Achievements</p>
+		<div class="row">
+			<div class="col-md-12 pdl16 pdr16" style="padding-left:23px"> 
+				<form>
+					<div class="form-group">
+					    <label for="inputTitle">Title</label>
+					    <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+				  </div>
+					<div class="form-group">
+					    <label for="inputSummary">Summary</label>
+					    <input type="text" class="form-control" id="inputSummary" placeholder="Detail about achievements">
+				  </div>
+				   <button type="button" id="btnSave" class="btn btn-lg btn-success btn-block">Save Details</button>
+				   <br/>
+				</form>
+				<p class="divider-title">All Achievements</p>
+				<br/>
+				<table class="table table-hover">
+					<tbody id="table_body">
+		  				<tr>
+		  					<td>
+		  						<div class="row course-row">
+		  							<div class="col-md-12">
+			  							<h2 class="content-title inline-content">Achievement Title</h2>
+										<p>Summary</p>
+			  							<a href="#" class="achievement_remove text-danger pdl16 pull-right"><span class="fa fa-remove fa-2x text-danger"></span> Remove</a>
+		  							</div>
+		  						</div>
+		  					</td>
+		  				</tr>
+	  				</tbody>
+				</table>
+				<br/><br/><br/>
+			</div>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

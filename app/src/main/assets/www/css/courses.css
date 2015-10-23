@@ -1,0 +1,21 @@
+.course-row {
+	display: block;
+	padding: 10px;
+}
+.course-row h2, h5, p {
+	padding: 0px;
+	margin: 0px;
+	line-height: 20px;
+}
+
+.course-row h2 {
+	font-size: 18px;
+	color: #000;
+}
+.course-row h5 {
+	font-size: 13px;
+}
+.course-row p {
+	line-height: 25px;
+
+}

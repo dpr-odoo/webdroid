@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_primary_dark"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_large"
+            android:tint="#fff" />
+
+        <com.widgets.WDTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_16dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_xxxlarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_8dp"
+        android:orientation="vertical">
+
+        <com.widgets.WDTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/powered_by"
+            android:textAllCaps="true"
+            android:textColor="@color/body_text_2_inverse"
+            android:textSize="@dimen/text_size_medium" />
+
+        <com.widgets.WDTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_4dp"
+            android:gravity="center"
+            android:text="@string/web_droid"
+            android:textColor="@color/body_text_2_inverse"
+            android:textSize="@dimen/text_size_xxlarge" />
+    </LinearLayout>
+
+</LinearLayout>

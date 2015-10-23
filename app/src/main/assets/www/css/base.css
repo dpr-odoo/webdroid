@@ -1,0 +1,191 @@
+html, body {
+	font-family: Arial;
+	font-size: 14px;
+	color: #414141;
+}
+
+.pd4 {
+	padding: 4px;
+}
+.pd8 {
+	padding: 4px;
+}
+.pd16 {
+	padding: 4px;
+}
+
+.pdt4 {
+	padding-top: 4px;
+}
+.pdl4 {
+	padding-left: 4px;
+}
+.pdr4 {
+	padding-right: 4px;
+}
+.pdb4 {
+	padding-bottom: 4px;
+}
+
+.pdt8 {
+	padding-top: 8px;
+}
+.pdl8 {
+	padding-left: 8px;
+}
+.pdr8 {
+	padding-right: 8px;
+}
+.pdb8 {
+	padding-bottom: 8px;
+}
+.pdt16 {
+	padding-top: 16px;
+}
+.pdl16 {
+	padding-left: 16px;
+}
+.pdr16 {
+	padding-right: 16px;
+}
+.pdb16 {
+	padding-bottom: 16px;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+.el-block {
+	display: block;
+}
+
+
+/* Header & app bar */
+div.header {
+	display:block;
+	position: fixed;
+	top:0px;
+	width: 100%;
+	overflow: hidden;
+	height: 56px;
+	background-color: #E64A19;
+	vertical-align: middle;
+	line-height: 56px;
+	padding: 0px 16px;
+	color: #fff;
+	font-weight: bold;
+	z-index: 99999;
+}
+div.header a.appbar-back, 
+div.header a.appbar-back:hover,
+div.header a.appbar-back:active   {
+	/*display: none;*/
+	/*text-align: right;*/
+	display: inline-block;
+}
+div.header ul.appbar-nav {
+	list-style: none;
+	height: 56px;
+	padding: 0;
+	margin: 0;
+	line-height: 56px;
+	text-align: right;
+}
+
+.appbar-nav > li {
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    height: 56px;
+    display: inline-block;
+}
+
+.appbar-nav .appbar-title {
+ 	display: block;
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 16px;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	line-height: 56px;
+}
+
+.appbar-nav .appbar-title.right {
+    left: 20%;
+    opacity: 0;
+}
+.appbar-nav .appbar-title.left {
+    left: -20%;
+    opacity: 0;
+}
+
+.appbar-nav > li > a,
+.appbar-nav > li > a:hover {
+    text-decoration: none;
+    display: block;
+    color:#fff;
+    padding: 0px 10px;
+}
+
+.appbar-nav > li.pull-left > a,
+.appbar-nav > li.pull-left > a:hover {
+    padding: 10px 8px 10px 8px;
+}
+
+.appbar-nav > li > a:active {
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.appbar-nav > li > a .fa {
+    font-size: 20px;
+    line-height: 15px;
+}
+
+
+/* main container */
+
+div.main {
+	padding-top: 65px; 
+	display: block;
+}
+
+.divider-title {
+	margin: 8px 0px 5px 0px;
+	padding: 0px 0px 0px 8px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #aaa;
+	text-transform: uppercase;
+}
+
+
+.content-title, .content-subtitle {
+	font-size: 18px;
+	font-family: Arial, Verdana;
+	font-weight: bold;
+	margin:0px;
+	padding:0px;
+	line-height: 25px;
+}
+
+.content-subtitle {
+	font-size: 13px;
+}
+.inline-content {
+	display: inline-block;
+}
+
+img.user-image {
+	width: 100px;
+	height: 100px;
+}

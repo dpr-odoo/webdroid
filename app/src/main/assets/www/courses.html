@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/webdroid/webdroid.js"></script>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<script type="text/javascript" src="js/database.js"></script>
+	<script type="text/javascript" src="js/dashboard.js"></script>
+	<!-- Your custom page css and javascript go here //-->
+	<script type="text/javascript" src="js/courses.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/courses.css"/>
+	
+</head>
+<body>
+<div class="screen-container">
+	<div class="header">
+		<div class="appbar">
+			<ul class="appbar-nav">
+				<li class="appbar-title">
+					<a href="javascript:hisotry.back()" class="appbar-back"><span class="fa fa-arrow-left"></span></a>
+					<span id="user_name">Dharmang Soni</span>
+				</li>
+				<li>
+					<a href="#"><span class="fa fa-sign-out"></span></a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<div class="main pdl16 pdr16">
+		<p class="divider-title">Courses</p>
+		<div class="row">
+			<div class="col-md-12 pdl16 pdr16" style="padding-left:23px"> 
+				<form>
+					<div class="form-group">
+					    <label for="inputCollegeName">School/College</label>
+					    <input type="text" class="form-control" id="inputCollegeName" placeholder="School/College name">
+				  </div>
+				  <div class="form-group">
+					    <label for="inputField">Field of study</label>
+					    <textarea rows="3" id="inputField" class="form-control" placeholder="Field of Study"></textarea>
+				  </div>
+				 
+				  <div class="form-group">
+					    <label for="inputDegree">Degree</label>
+					    <input type="text" class="form-control" id="inputDegree" placeholder="Degree">
+				  </div>
+				  <div class="form-group">
+					    <label for="inputStartDate">Start Date</label>
+					    <input type="text" class="form-control" id="inputStartDate" placeholder="MM/DD/YYYY">
+				  </div>
+				  <div class="form-group">
+					    <label for="inputEndDate">End date</label>
+					    <input type="text" class="form-control" id="inputEndDate" placeholder="MM/DD/YYYY">
+					    <label><input type="checkbox" id="checboxOnGoing"/> On Going</label>
+				  </div>
+				  <div class="form-group">
+					    <label for="inputGrade">Grade</label>
+					    <input type="text" class="form-control" id="inputGrade" placeholder="Grade">
+				  </div>
+				  <div class="form-group">
+					    <label for="inputActivity">Activities & Associated</label>
+					    <textarea rows="3" id="inputActivity" class="form-control" placeholder="Activities & Associated"></textarea>
+				  </div>
+				  <div class="form-group">
+					    <label for="inputSummary">Summary</label>
+					    <textarea rows="3" id="inputSummary" class="form-control" placeholder="Detailed Summary"></textarea>
+				  </div>
+				   <button type="button" id="btnSave" class="btn btn-lg btn-success btn-block">Save Details</button>
+				   <br/>
+				</form>
+
+				<p class="divider-title">All Courses</p>
+				<br/>
+				<table class="table table-hover">
+					<tbody id="table_body">
+		  				<tr>
+		  					<td>
+		  						<div class="row course-row">
+		  							<div class="col-md-12">
+			  							<h2 class="content-title inline-content">College name</h2>
+			  							<h5 class="content-subtitle">Course name</h5>
+			  							<p>Grade A+</p>
+			  							<p>Activities</p>
+			  							<p>Description</p>
+			  							<a href="#" class="course_remove text-danger pdl16 pull-right"><span class="fa fa-remove fa-2x text-danger"></span> Remove</a>
+		  							</div>
+		  						</div>
+		  					</td>
+		  				</tr>
+	  				</tbody>
+				</table>
+				<br/><br/><br/>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
